@@ -5,7 +5,7 @@
 	"version": "1.0.9",
 	"main": "./src/index.ts",
 	"dependencies": {
-		"@pfeifferj/plugin-scaffolder-backend-module-kubernetes-deploy": "0.0.26",
+		"@pfeifferj/plugin-scaffolder-backend-module-kubernetes-deploy": "0.0.27",
 		"@pfeifferj/plugin-scaffolder-backend-module-read-file": "0.0.9",
 		"@backstage/backend-dynamic-feature-service": "0.1.0",
 		"@backstage/backend-plugin-api": "0.6.9",
