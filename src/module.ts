@@ -27,3 +27,19 @@ export const readFileModule = createBackendModule({
 		});
 	},
 });
+
+export const deployKubernetesModule = createBackendModule({
+	moduleId: 'kubernetes-deploy',
+	pluginId: 'scaffolder',
+	register({ registerInit }) {
+		registerInit({
+			deps: {
+				scaffolderActions: scaffolderActionsExtensionPoint,
+				config: coreServices.rootConfig,
+			},
+			async init({ scaffolderActions }) {
+				scaffolderActions.addActions(deployKubernetesAction());
+			},
+		});
+	},
+});
