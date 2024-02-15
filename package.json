@@ -2,12 +2,14 @@
 	"name": "@pfeifferj/dynamic-plugin-kubernetes-deploy",
 	"description": "dynamic plugin for backstage kubernetes-deploy scaffolder action",
 	"authors": "pfeifferj",
-	"version": "1.0.3",
+	"version": "1.0.5",
 	"main": "./src/index.ts",
 	"dependencies": {
-		"@pfeifferj/plugin-scaffolder-backend-module-kubernetes-deploy": "0.0.25",
-		"@pfeifferj/plugin-scaffolder-backend-module-read-file": "0.0.8",
-		"@backstage/backend-dynamic-feature-service": "0.1.0"
+		"@pfeifferj/plugin-scaffolder-backend-module-kubernetes-deploy": "0.0.26",
+		"@pfeifferj/plugin-scaffolder-backend-module-read-file": "0.0.9",
+		"@backstage/backend-dynamic-feature-service": "0.1.0",
+		"@backstage/backend-plugin-api": "0.6.9",
+		"@backstage/plugin-scaffolder-node": "0.2.10"
 	},
 	"devDependencies": {
 		"@backstage/cli": "0.23.1",
@@ -16,7 +18,7 @@
 	"scripts": {
 		"clean": "backstage-cli package clean",
 		"build": "backstage-cli package build",
-		"export-dynamic": "janus-cli package export-dynamic-plugin"
+		"export-dynamic": "janus-cli package export-dynamic-plugin --embed-package @pfeifferj/plugin-scaffolder-backend-module-kubernetes-deploy --embed-package @pfeifferj/plugin-scaffolder-backend-module-read-file"
 	},
 	"files": [
 		"dist",
@@ -33,5 +35,9 @@
 		"access": "public",
 		"main": "dist/index.cjs.js",
 		"types": "dist/index.d.ts"
+	},
+	"exports": {
+		".": "./src/index.ts",
+		"./package.json": "./package.json"
 	}
 }
