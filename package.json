@@ -1,43 +1,42 @@
 {
-	"name": "@pfeifferj/dynamic-plugin-kubernetes-deploy",
-	"description": "dynamic plugin for backstage kubernetes-deploy scaffolder action",
-	"authors": "pfeifferj",
-	"version": "1.0.9",
-	"main": "./src/index.ts",
-	"dependencies": {
-		"@pfeifferj/plugin-scaffolder-backend-module-kubernetes-deploy": "0.0.26",
-		"@pfeifferj/plugin-scaffolder-backend-module-read-file": "0.0.9",
-		"@backstage/backend-dynamic-feature-service": "0.1.0",
-		"@backstage/backend-plugin-api": "0.6.9",
-		"@backstage/plugin-scaffolder-node": "0.2.10"
-	},
-	"devDependencies": {
-		"@backstage/cli": "0.23.1",
-		"@janus-idp/cli": "1.7.1"
-	},
-	"scripts": {
-		"clean": "backstage-cli package clean",
-		"build": "backstage-cli package build",
-		"export-dynamic": "janus-cli package export-dynamic-plugin --embed-package @pfeifferj/plugin-scaffolder-backend-module-kubernetes-deploy --embed-package @pfeifferj/plugin-scaffolder-backend-module-read-file"
-	},
-	"files": [
-		"dist",
-		"dist-dynamic/*.*",
-		"dist-dynamic/dist/**",
-		"dist-dynamic/alpha/*"
-	],
-	"backstage": {
-		"role": "backend-plugin-module"
-	},
-	"types": "src/index.ts",
-	"license": "Apache-2.0",
-	"publishConfig": {
-		"access": "public",
-		"main": "dist/index.cjs.js",
-		"types": "dist/index.d.ts"
-	},
-	"exports": {
-		".": "./src/index.ts",
-		"./package.json": "./package.json"
-	}
+  "name": "@pfeifferj/dynamic-plugin-kubernetes-deploy",
+  "description": "dynamic plugin for backstage kubernetes-deploy scaffolder action",
+  "authors": "pfeifferj",
+  "version": "1.0.9",
+  "main": "./src/index.ts",
+  "dependencies": {
+    "@pfeifferj/plugin-scaffolder-backend-module-kubernetes-deploy": "0.0.27",
+    "@pfeifferj/plugin-scaffolder-backend-module-read-file": "0.0.9",
+    "@backstage/backend-dynamic-feature-service": "0.1.0",
+    "@backstage/backend-plugin-api": "0.6.9",
+    "@backstage/plugin-scaffolder-node": "0.2.10"
+  },
+  "devDependencies": {
+    "@backstage/cli": "0.23.1",
+    "@janus-idp/cli": "1.7.1"
+  },
+  "scripts": {
+    "clean": "backstage-cli package clean",
+    "build": "backstage-cli package build",
+    "export-dynamic": "janus-cli package export-dynamic-plugin --embed-package @pfeifferj/plugin-scaffolder-backend-module-kubernetes-deploy --embed-package @pfeifferj/plugin-scaffolder-backend-module-read-file"
+  },
+  "files": [
+    "dist",
+    "dist-dynamic/*.*",
+    "dist-dynamic/dist/**"
+  ],
+  "backstage": {
+    "role": "backend-plugin-module"
+  },
+  "types": "src/index.ts",
+  "license": "Apache-2.0",
+  "publishConfig": {
+    "access": "public",
+    "main": "dist/index.cjs.js",
+    "types": "dist/index.d.ts"
+  },
+  "exports": {
+    ".": "./src/index.ts",
+    "./package.json": "./package.json"
+  }
 }
