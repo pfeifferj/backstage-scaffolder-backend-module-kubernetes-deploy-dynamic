@@ -4,9 +4,9 @@
 		"declaration": true,
 		"skipLibCheck": true,
 		"forceConsistentCasingInFileNames": true,
-		"outDir": "./dist-types/src",
-		"rootDir": "./src"
+		"outDir": "dist-types",
+		"rootDir": "."
 	},
-	"include": ["src/index.ts"],
+	"include": ["src"],
 	"exclude": ["node_modules"]
 }
