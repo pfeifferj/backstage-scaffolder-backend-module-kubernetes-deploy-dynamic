@@ -9,7 +9,7 @@ includes:
 
 ## Quickstart
 
-`❯ oc edit cm developer-hub-dynamic-plugins -n openshift-operators`
+`❯ oc edit cm developer-hub-dynamic-plugins -n rhdh`
 
 ```yaml
 apiVersion: v1
