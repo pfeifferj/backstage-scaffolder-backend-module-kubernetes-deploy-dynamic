@@ -32,7 +32,7 @@ jobs:
       - run: yarn install --frozen-lockfile
       - run: yarn tsc
       - run: yarn build
-      - run: yarn run export-dynamic
+      - run: yarn run export-dynamic --embed-package @pfeifferj/plugin-scaffolder-backend-module-kubernetes-deploy --embed-package @pfeifferj/plugin-scaffolder-backend-module-read-file
       - run: yarn publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.npm_token}}
