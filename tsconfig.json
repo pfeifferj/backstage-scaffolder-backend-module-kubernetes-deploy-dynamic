@@ -5,7 +5,11 @@
 		"skipLibCheck": true,
 		"forceConsistentCasingInFileNames": true,
 		"outDir": "./dist-types",
-		"rootDir": "."
+		"rootDir": ".",
+		"module": "CommonJS",
+		"target": "ES2018",
+		"moduleResolution": "node",
+		"sourceMap": true
 	},
 	"include": ["src"],
 	"exclude": ["node_modules"]
