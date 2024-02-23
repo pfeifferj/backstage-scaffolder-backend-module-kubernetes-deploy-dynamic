@@ -2,8 +2,9 @@
 	"name": "@pfeifferj/dynamic-plugin-kubernetes-deploy",
 	"description": "dynamic plugin for backstage kubernetes-deploy scaffolder action",
 	"authors": "pfeifferj",
-	"version": "1.0.13",
-	"main": "./src/index.cjs.js",
+	"version": "1.0.14",
+	"main": "src/index.ts",
+	"types": "src/index.ts",
 	"dependencies": {
 		"@pfeifferj/plugin-scaffolder-backend-module-kubernetes-deploy": "0.0.27",
 		"@pfeifferj/plugin-scaffolder-backend-module-read-file": "0.0.9",
@@ -23,13 +24,11 @@
 	"files": [
 		"dist",
 		"dist-dynamic/*.*",
-		"dist-dynamic/dist/**",
-		"dist-dynamic/alpha/*"
+		"dist-dynamic/dist/**"
 	],
 	"backstage": {
 		"role": "backend-plugin-module"
 	},
-	"types": "src/index.ts",
 	"license": "Apache-2.0",
 	"publishConfig": {
 		"access": "public",
