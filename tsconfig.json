@@ -1,15 +1,12 @@
 {
+	"extends": "@backstage/cli/config/tsconfig.json",
 	"compilerOptions": {
 		"strict": true,
-		"declaration": true,
-		"skipLibCheck": true,
 		"forceConsistentCasingInFileNames": true,
 		"outDir": "./dist-types",
 		"rootDir": ".",
-		"module": "CommonJS",
-		"target": "ES2018",
-		"moduleResolution": "node",
-		"sourceMap": true
+		"sourceMap": true,
+		"useUnknownInCatchVariables": false
 	},
 	"include": ["src"],
 	"exclude": ["node_modules"]
