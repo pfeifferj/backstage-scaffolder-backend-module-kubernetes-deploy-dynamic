@@ -18,8 +18,8 @@ data:
     includes:
       - dynamic-plugins.default.yaml
     plugins:
-      - package: '@pfeifferj/dynamic-plugin-kubernetes-deploy'
-        integrity: 'sha512-25kS7j/apKsL4jidmPH8tCmcpUIKSfxv1Vq2N3qNB+hj2oWhcnOp7Cf/HLxE8ZGHVW8eg6wgoY8DlHficLkQAA=='
+      - package: '@pfeifferj/backstage-scaffolder-backend-module-kubernetes-deploy-dynamic'
+        integrity: 'sha512-AwysOmmabZ4mtqk8Z4lb7OHO0j8xtsjOYL+DGnIscIw2RdM6zIjsanbM2EWrLw+Q4N3cEht0gRJAjxW7SWEoFQ==' # check with npm info
         disabled: false
 kind: ConfigMap
 metadata:
