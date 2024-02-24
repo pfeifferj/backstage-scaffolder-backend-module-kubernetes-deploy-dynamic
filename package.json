@@ -2,9 +2,9 @@
 	"name": "@pfeifferj/dynamic-plugin-kubernetes-deploy",
 	"description": "dynamic plugin for backstage kubernetes-deploy scaffolder action",
 	"authors": "pfeifferj",
-	"version": "1.0.18",
-	"main": "src/index.ts",
-	"types": "src/index.ts",
+	"version": "1.0.19",
+	"main": "dist-dynamic/dist/index.cjs.js",
+	"types": "dist-dynamic/dist/index.cjs.js",
 	"typesVersions": {
 		"*": {
 			"package.json": [
