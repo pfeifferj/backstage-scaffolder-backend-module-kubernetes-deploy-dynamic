@@ -18,7 +18,7 @@ data:
     includes:
       - dynamic-plugins.default.yaml
     plugins:
-      - package: '@pfeifferj/dynamic-plugin-kubernetes-deploy'
+      - package: '@pfeifferj/backstage-scaffolder-backend-module-kubernetes-deploy-dynamic'
         integrity: 'sha512-25kS7j/apKsL4jidmPH8tCmcpUIKSfxv1Vq2N3qNB+hj2oWhcnOp7Cf/HLxE8ZGHVW8eg6wgoY8DlHficLkQAA=='
         disabled: false
 kind: ConfigMap
